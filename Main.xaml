@@ -1,0 +1,294 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="869.6,3052" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:do="clr-namespace:DocumentFormat.OpenXml;assembly=DocumentFormat.OpenXml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>DocumentFormat.OpenXml</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="704,2987.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Superintendencia de Administración Tributaria SAT" sap:VirtualizedContainerService.HintSize="641.6,2875.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4417ca19-30d2-4c9f-bd49-19d1253d32ab" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="608,2658.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="545.6,2543.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Usuario" />
+                <Variable x:TypeArguments="x:String" Name="Password" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&lt;img src=&quot;https://porta…'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4417ca19-30d2-4c9f-bd49-19d1253d32ab" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://portal.sat.gob.gt/portal/" DesignTimeRectangle="1221, 229, 48, 48" DesignTimeScaleFactor="1" FriendlyName="'&lt;img src=&quot;https://porta…'" FullSelectorArgument="&lt;webctrl class='fm-icon' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='fm-icon' tag='DIV' type='' aaname='' check:text='&amp;lt;img src=&amp;quot;https://portal.sat.gob.gt/portal/wp-content/uploads/2021/08/icono_agencia_vitual.png&amp;quot;&amp;gt;' /&gt;" Guid="ce38388c-5bfa-4ecb-a57f-fafcafd6ed21" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQ/SURBVGhD7Zq/ahRRFMZ9BCuR+Aq+gIW9jY8hgq2Fjb0PELt0VhaSRhBtIkEkWkQsBMEmm8T4hyCCxmgScdzfJN/mzNlzZncms7KR/eDjzu7ce+f87jlzs7uZMx9/7Bcfarw15L1ia+fQ72u8mXgDfx/2euJexb+K3rdDryUugRpD9YMaBRXB4BII9wNsBTQCagB02jUDmnbNgKZdM6BpVyOgP1PkTP8EaPfgd7HRv8jS+peBec37OBozypmOgXa7BSLg+dX14uriSnHpyZvSV172St/c/jlory2/K/sJMJorcqZOgZQJgrz48HUFwsJkZty4YJn0UegQqO86RRPLBMFKCySCkXXuxupaCMY8o6AydQJksyITsH0tC9ZDezjmq4PKpA+sZz61BBIMwUUAy5vbFS+83RyCkgUHEG0dVKYTAXExnxlrVn1n/6Df81hAEWwEJAusDipTBQjXyU9Krc/dXymDp5UF1Pu60+91LOCUKc4TvG11bKE4Zpv3186k70mNgSi1CwvPKiAWiGC8AFTGPIxaa96TfZYy6ctfY6Dri6+K8/eel46AyIIXMALiXlLQEQBWljhHNdjrZ2oFxGqRHeyhFJy/d/xrsmVB+APMeO47laXMefrZLGVqBcRqRTAyq28FDIF68Z6CxYy1ZUlrgSjziQBRbhbIZ8hvBgDO3X06lCWCFYyy5AW0+tiyy6QfURoBqdywQOQoEwRLX585xDnM2CizgHCO1m7hmVoBsdpZhlh1K5UMqx9lQJsDY30Gy8wezUsfxk8USFBckJaLehHU7UcvyjEc+3JEjKOPF9kWkKwYMum3u7GBWKEICPuSkQTksycRuD8HOHPa+TkeL0MNgc7deTxUdqyyLxmJ9+3u5RUthC03XYPrTSRDAGEB0UabQRP5UtR9JRgWkE1hIkCX55eGsuQDIhusMqWEObb2UgYx/S0M5jr8uZgIEBNbIHYxBSMTtEpGqy0z1pYgLa8B4VibgQeyH1Iz6Yf9sYEwE6vsgCJ4BaRWH2UiEyAbheAZg3mPscq6hcHjfFJoBcTElN3ZWw9KKALxjkBkggSY4K01NoKx5dY5EGXHxxCABEWmVIJYAQnAA9EXKABoZc1hYbD/TpRJ/09qBIR9lmwgmT0c/e0i2PE6h312cKbWQGSJVfNZ8oEJIHut4xLgCFIwmpNr2WvjTAOgzw2BsC89nEGNsgeRo6/fONOJgHAE5bNl4XRsW0x/D2N3Ne9MFSBcp2hizIUjKAvmAT2ExtByb5KZqNTkTJ0AYd1T2iisBWet930/NoC6zMiZOgPCQBFMBpa5CYicqVMgDJQFoxQJFkBvztGHvhoXzRk5U+dA3grU2p+z/cd1pokDTcqZGgGdBs2Apl16AGoGNK36L4HwAMhbXysi6/+yesZBjh4etK4+SNj+IUKcPUjYKdAoqCpQ3/2Aun0ycq/4C9bytHEDCgNFAAAAAElFTkSuQmCC" InformativeScreenshot="240d0cf516cb753404f466dcfeb12554.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superintendencia de Administración Tributaria SAT' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvType="Icon" DesignTimeRectangle="1228, 236, 35, 35" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='&amp;lt;img src=&amp;quot;https://portal.sat.gob.gt/portal/wp-content/uploads/20*' src='https://portal.sat.gob.gt/portal/wp-content/uploads/2021/08/icon*' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;lt;img src=&amp;quot;https://portal.sat.gob.gt/portal/wp-content/uploads/20*' src='https://portal.sat.gob.gt/portal/wp-content/uploads/2021/08/icon*' tag='IMG' type='' class='entered lazyloaded' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANrSURBVFhH1Za9ahRhFIa9BCuReAveQAp7Gy9DBFsLG3svIHbprCwkjSDaRIJIYhGxEAQbE1MGESSoGHHMM+TZnD1z5mcNwvrCyzc7833feeY9M7t7oVli/R9wv5fI6txw345/NZ++/mg29z/PzGfO42rNmNVfwVF8bXe/ubGx3aw+f9f6+uu91ncOv8/Gm1sf2nnCVntVVpPhTIiCV5+8nQOKYH1m3VRINQmODUlAqApMe+327scSkn3GANUoXExLUzx+1oLnG8ig7DcEqAbhBKNQBbN1cDjn9fcHHUAtKHCMQ4CqF46FObFo0jj6eXwy80wAUriC00IOAapeOJ6NlUfbLQijFm7vy9HJrDMBaoJcBySOHkdAjvnqybVVCUc7r6y/nIOKcGycBaxJZjDHaM7pnJ4q4W5tvGkuP3zVuoIjnSzAhOPZE6CCwabHNboU66sOHHdBajgDWig/a/kzKUYovqxZz3Nq6zXXmRfTUx047qIC06QSBRhFszhnYcza2HrGCMejNApHSyNcTi6/CMCuPHjRSY/CgpleFjfgnNha1YGzpVgoXSVEYebmRBHXMGurxIHiGmP8WlEdOFLoS440omwLqVTJ+GKwNifbJn66L3NYPxlOQBYzskEWBe493WnXcJxbjljHnCy6IJyWQc3BQV7B4dwWJVxOVQGRr3ET7Bn353gwOS5euv+s01ruPrdFcT6+hVnVTcWWWoN6o8kBh4VjrF6ERZTb7XMoGGHwQozCXVvb7KSXNycl7p52YY6js0wWMz+CYerwFTYKx6QIx9voxhoA22IKmrWxzYx8BopjX4QMF/8AqDk4zCRbCyAgbu7oz1FlivGSeCOswZxjrd2IYHjSLwSTaO3Fu49bQDbNrqA0BYEHJNq1FVhs6SAcreWnBDgBSdA2YzcXJsMxF0BgGLV7RDCc/9OpDhzO6cVN+5xBmR9vKK73Gs6pYVXCkR53k9PLRYTp++xxC3MKLJh7UivWxqqEw7m9uA9wzBlKV3/RseqFwxVgTjGCehxHzPwMFt/ObDUIh9mkAoyQGTYDuYaRZ5nEqnZqNQqHfQZ9SaIFjfZ8nsfDP5SYVpPgMIBs3AfZ50WgtJoMhwGMkLSbwsBmc405zHVdtWdltRBctkWj87U4f6rVueD+ldUMbhm1xHBN8wdmY42UV8kHDwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="483.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Ingrese su usuario" Title="USUAIRO">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Usuario</CSharpReference>
+                  </OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="483.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Ingrese su Contraseña" Title="CONTRASEÑA">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Password</CSharpReference>
+                  </OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT user'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="4417ca19-30d2-4c9f-bd49-19d1253d32ab" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://portal.sat.gob.gt/portal/#link-agenciavirtual" CvElementArea="893, 500, 334, 42" CvTextArea="909, 514, 45, 12" CvTextArgument="Usuario" CvType="InputBox" DesignTimeRectangle="894, 501, 328, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT user'" FullSelectorArgument="&lt;webctrl id='user' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user' tag='INPUT' type='text' class='input' aaname='' /&gt;" Guid="56344189-c038-4c0d-b13b-102290ddf9fe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUwAAAAsCAYAAAAO7YGxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAR8SURBVHhe7d1rU9tGFMZxf1S+E2/aTnnRTtpCgkkC4RJuIRAaTCA0DCVNCE0MSaGBOAZzM7dTnUVSVrIsySA8FP9/M2dA2l3JOMwzuytnyOW6FiTXURDztV4ltVPZ1nW+341eO65/vbbw+aRj+zxF3bCyXQRmVGnnqPN2xfUJtyUdU9F1lffpsmPjxl33v5ten6JuUNlqA1M7WcdthaLk18tS3K/K6fm5OwwA/v8004qVquTfl6RtcrUmLLVsOXPSCkg7KDUkAaBVaHiGg9MWuSRvX9lymwGg9bT/uZkQmNpIWAKA4YWmLTDD1GU4AOCCLs9tgcBkzxIAvtE9TZsfmMwuASDeRWA663T96BAAoD5/hslyHADi+YHJh9IBIJ4fmACAeP4eJgAgHjNMAEiJwASAlG5dYJ6enkqpXBYeYQHIWmZ7mNulr9LZ22++2iYLL2Tx9Rv36Pptbm3L3UeDslOpuGcAIBuZzTBvSmACwHVpamAeHB7Kk98L8sOvXfLjb/dkbnFJzs7O5PjkRAbGn8rapw3TT+kYHauSxk3NzstP3Q/MGL3//aFR2XfGqJ3divSNPpHvf+mSn/MP5fXKKst1AJfS1MCcefmHczxn9hl3K3vSPfBY/l5bjw1MDcaJ57Py7MW8GadL7Xv9Q07ff/xx/WMTUt7dNcd2YB4eHUnP0Ii8Wv7LXEf3NvWeHz5+cu8CAOk1NTAXlpbNbK9U3jGzvOrxsQm5uMA8Pz93gq9qwlLp8dOZWdPujbMD0A7Mjxub8nB4TKrVY7dVzAxzfHrGBCgANKKpgamht+wEVlffgHR0dkth4ZWcJASm0mW1ziJ1Sf7dnU5TdmDa4+zA1PParv08UecAII3MAnN3z1liO0vlrVLJPROcDYZnirpcfuSE4NKbldjA1FmozkqX377zZ4VeCCcFZr0Z5vDktP86ACCtzAJTA2hkatoE5FG1apbcGlg66/y8/cXfi9RZpfbVPl5gaphOzc6Z0n6VvX3pHRk3wagh++DxqLz7sGb6fflalrt9g6kCM7yHqfuc3r4pADQqs8BU+jRbn1jrk2x9Kt0zOCwb/342Qaf2Dw5MqHpPu6fnXpoZpNKHOT2DI2a5raE29uy5vyTX4L1zv9dcc2hiytT84lJiYCqekgPISqaBCQC3GYEJACnlvD+vCwCI5k0smWECQAICEwBSIjABIKWawOSPoAFALc3GYGB2FPgzuwAQQbMxGJhO5dfLbjMAwJN/X6oNzLZC0W0GAHg0G2sCk2U5AAQFluOBwHSKWSYAfNM2uVo/MLXaV7bcrgDQujQLw/lYE5hahCaAVhYZllr+N+7/Kfe+1+U5e5oAWolmXuAhTzgbAw0RpYP1I0fFSpUPtwO4VTTTNNs042qCMqoiT9plp2ua8/Uqqn+j1wjXVcc3oy77GrP+2cLXuynvXb3XcdXXq/2p1qqo34OoiuubdJ3AQSM3TVOXvV54XCPXyfpnaGbFvfarvCeNVNJ9GjkOt2VZSffRc1RrVfh3wKu4tqQKjF2Q/wCRbcpO1idBGAAAAABJRU5ErkJggg==" InformativeScreenshot="41d55473ce9a3942e7ba1c8e4a86a6a3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superintendencia de Administración Tributaria SAT' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Usuario</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT pass'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4417ca19-30d2-4c9f-bd49-19d1253d32ab" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://portal.sat.gob.gt/portal/#link-agenciavirtual" CvElementArea="894, 550, 330, 42" CvTextArea="909, 563, 67, 13" CvTextArgument="Contrasena" CvType="InputBox" DesignTimeRectangle="894, 551, 328, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT pass'" FullSelectorArgument="&lt;webctrl id='pass' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pass' tag='INPUT' type='password' class='input' aaname='' /&gt;" Guid="8403ffa6-39ee-435c-b4bf-2e6bf95614be" ImageBase64="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" InformativeScreenshot="d6531510acc7d10ccc671f97dd7ba466.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superintendencia de Administración Tributaria SAT' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Password</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Aceptar'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4417ca19-30d2-4c9f-bd49-19d1253d32ab" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://portal.sat.gob.gt/portal/#link-agenciavirtual" CvElementArea="894, 626, 328, 45" CvTextArea="1027, 640, 61, 18" CvTextArgument="Aceptar" CvType="Button" DesignTimeRectangle="894, 628, 328, 42" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Aceptar'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button' aaname='Aceptar' check:text='Aceptar' /&gt;" Guid="a7b4416b-c5c7-48cc-adbc-748687b2cf74" ImageBase64="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" InformativeScreenshot="11095f7dd97764ac66304eaa94409cff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Superintendencia de Administración Tributaria SAT' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe '" sap:VirtualizedContainerService.HintSize="483.2,660.8" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="3a8f62a1020c2379245205e9b2fe3b68" Selector="&lt;html app='chrome.exe' title='farm3.sat.gob.gt/menu-agenciaVirtual/private/home.jsf' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="449.6,513.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b4a31fd-eb7c-4c9d-bdde-37eb5e37074a" InformativeScreenshot="527d486d5dbe4e0e510dcb898014c808" Selector="&lt;webctrl id='formContent:contentAgenciaVirtual' tag='TABLE' /&gt;&lt;webctrl parentid='formContent:j_idt34' tableRow='1' tag='DIV' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'H3'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a68626eb-6853-48f0-8181-70d7a950eb1f" InformativeScreenshot="419d744e368df3e0ee950f94f8fc9533" Selector="&lt;webctrl id='formContent:contentAgenciaVirtual' tag='TABLE' /&gt;&lt;webctrl idx='2' tableRow='1' tag='H3' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ded83e4d-f4c8-4e76-b58e-7a9a682c6862" InformativeScreenshot="136494421f1ee68a19807166fa181bb2" Selector="&lt;webctrl id='formContent:contentAgenciaVirtual' tag='TABLE' /&gt;&lt;webctrl aaname='Consultar DTE' tableRow='1' tag='DIV' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Agencia'" sap:VirtualizedContainerService.HintSize="483.2,252" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="42dd7f7376b6aa6d0e5b63970ec8094d" Selector="&lt;html app='chrome.exe' title='Agencia Virtual' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="do:DateTimeValue" Name="FechaInicio" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, 226, 1296, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAABDCAYAAADK1Mg0AAAABGdBTUEAALGPC/xhBQAAA4NJREFUeF7tl9uV2zAMRNcFpav8pJv0sC2kkhSSFhLeY00M0yObL9tUmI+rpUYUCIAg5P34+PZ5OjA/Er87+bXB+HvidOSkxIQosFp+JqKNs+2/g2MRE/Jl01qgMmTnol/dHIOviREJ4V1v5+pmfmIgJMfNKUV2zn0kciPMDeeeQDg+7nkp6iWXPhKx4pz481/P4+NnxfkYeWweV5sV50NVQtm756XEKnHPz1hxPrS7z2uuESvOhXbXN8VyyqoErDgXCmbUF+d+lYAV50L95HEw++z/UHNYcS5GJKXuCFpxLlT2PU1W/yuVJdaK81BX9vuU9xOw4jxoh3ubrBJbVm1WnIP4Ce2pkno7Vnw/aq7Q00tAR6f817AV34t2liB6KgTaepIVx4IzQLARqkHkz5ydFvTvQXmVgBXbUVA0RhyRU7Xwfm9y1KShruKsWA6LsdPRgZG4NUvo60lWvI8SoQb2LOpK/kJfQsCKHiWDxVqPRSmtv0tixeKrm/MYK94Ss+9gV3GIeeorsbmiC83TWHCv95wP9+CdWLnYcfPKsOIFFturCpwgkNYg+hy/gA/yCV9b/LnGimdwOiZBkIyegBQE1eGel4IPsTqw6+bVY8Xr7Ed6d5dEYKcnIfggO7KFv+jCvVeOETGqBQU70lOW+TFk3NusSQa+kpDcVp+/mYChaFwLxDktEACOY0vonmelaL4qg3Hur2ivmEzIDeNEfD4SNiAGXAo+5X46hlQKC+aGryePh90kyFryREWoovaEwDZwx6a9/I7ONsi/NuzG7eRy1ABH8rpN2gZ59+5xgBKOtkZCctyaY0kXd3Raz6SzNRq37ljShezHRXuPDu9HeyOhCt2aY0mXvNxHLHz4npLvLA74yauQLnmT/Z+UdIkJgRHHh8RSgTXwTt+PrlGkS14p4CeXkdtz9vd0tPcnJl2cc61NbcQneYqkuB9bJMq/8BhnrxSOkbP5WtKFqhjtYMsn+XWf3EdsA5cUoGLmcfZVbIO9agESU/J1cM/QHPm8uQg39xKTo88o/UNjUMD85V7zXTMf8el/DplAYlwAJVBJ2CAh7rljzsRY8RxgbXLUe/7ZpAgC1RFxQeXoPZLqnkdI+pz9xYoeAgASRdBAwvQXYpCau0e0PRdWXB0rro4VV8eKq2PF1bHi6lhxday4OlZcHSuujhVXx4qrY8XVseLSfJ7+ABch4UK5/RhGAAAAAElFTkSuQmCC" InformativeScreenshot="58ad847afbb47334f9820949f82883d7.jpg" Selector="&lt;html app='chrome.exe' title='Superintendencia de Administración Tributaria SAT' /&gt;" Title="Superintendencia de Administración Tributaria SAT" Url="https://portal.sat.gob.gt/portal/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
